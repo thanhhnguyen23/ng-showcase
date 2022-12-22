@@ -1,16 +1,12 @@
 <h1>Single Page Application</h1>
 
 <nav>
-  <a class="button" routerLink="/spa/crisis-list" routerLinkActive="activebutton" ariaCurrentWhenActive="page"
-    >Crisis Center</a
-  >
-  |
-  <a class="button" routerLink="/spa/heroes-list" routerLinkActive="activebutton" ariaCurrentWhenActive="page"
-    >Heroes</a
-  >
+  <ul>
+    <a class="button" routerLink="/spa/crisis-list" routerLinkActive="active" ariaCurrentWhenActive="page" >Crisis Center</a> | 
+    <a class="button" routerLink="/spa/heroes-list" routerLinkActive="active" ariaCurrentWhenActive="page" >Heroes</a> | 
+    <a class="button" routerLink="/spa/first" routerLinkActive="active" ariaCurrentWhenActive="page">First Component</a> |
+    <a class="button" routerLink="/spa/second" routerLinkActive="active" ariaCurrentWhenActive="page">Second Component</a> 
+  </ul>
 </nav>
 
 <router-outlet></router-outlet>
-
-<!-- <app-crisis-list></app-crisis-list>
-<app-heroes-list></app-heroes-list> -->
