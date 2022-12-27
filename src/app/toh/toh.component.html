@@ -1,0 +1,16 @@
+<h1>Tour of Heroes</h1>
+
+<div class="wrapper">
+  <h1 class="title">Angular Router</h1>
+  <nav>
+    <a class="button" routerLink="/toh/crisis-center" routerLinkActive="active" ariaCurrentWhenActive="page">Crisis Center</a> 
+    <a class="button" routerLink="/toh/superheroes" routerLinkActive="active" ariaCurrentWhenActive="page">Heroes</a> 
+    <a class="button" routerLink="/toh/admin" routerLinkActive="active" ariaCurrentWhenActive="page">Admin</a> 
+    <a class="button" routerLink="/toh/login" routerLinkActive="active" ariaCurrentWhenActive="page">Login</a> 
+    <a class="button" [routerLink]="[{ outlets: { popup: ['compose'] } }]">Contact</a>
+  </nav>
+  <div [@routeAnimation]="getRouteAnimationData()">
+    <router-outlet></router-outlet>
+  </div>
+  <router-outlet name="popup"></router-outlet>
+</div>
